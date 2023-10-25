@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Organisation App</title>
+    <!-- Load Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Load CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="screen" id="screen1">
+      <!-- HTML for Screen 1 -->
+
+      <!-- Welcome screen-->
+      <div class="welcome__screen">
+        <h1>SOCS</h1>
+        <br />
+        <img class="welcome__logo" src="../images/socks.png" alt="socs logo" />
+        <br />
+        <h1>School of Code Stash</h1>
+      </div>
+
+      <h1 id="screen__1">SOCS</h1>
+      <p>School of Code Stash</p>
+      <img id="socks__logo" src="../images/socks.png" alt="socs logo" />
+
+      <div class="heading heading__week">
+        <a id="week__button" href="#select__week">Resources by Week</a>
+      </div>
+      <div class="heading heading__subject">
+        <a id="topic__button" href="#select__topic">Resources by Topic</a>
+      </div>
+      <div class="heading heading__overview">
+        <a id="overview__button" href="#course__overview">Course Overview</a>
+      </div>
+
+      <!-- Buttons for Week selection-->
+
+      <h2 id="select__week">Select the Week</h2>
+      <div class="button__group">
+        <button id="WeekOne__Button">Week 1</button>
+        <button>Week 2</button>
+        <button>Week 3</button>
+        <button>Week 4</button>
+        <button>Week 5</button>
+        <button>Week 6</button>
+        <button>Week 7</button>
+        <button>Week 8</button>
+        <button>Week 9</button>
+        <button>Week 10</button>
+        <button>Week 11</button>
+        <button>Week 12</button>
+        <button>Week 13</button>
+        <button>Week 14</button>
+        <button>Week 15</button>
+        <button>Week 16</button>
+      </div>
+      <br />
+      <div class="resource__appears">
+        <p>Resources by WEEK will appear here!</p>
+        <!--First resourse from object eg [0]-->
+        <!-- <p id="object__week__0">Week:${}</p>
+        <p id="object__subject__0">Subject: ${}</p>
+        <p id="object__title__0">Title: ${} </p>
+        <p id="object__resource__0">Resource: ${}<p> -->
+        <!--Second resourse from object eg [1]-->
+        <p id="object__week__1">Week:${}</p>
+        <p id="object__subject__1">Subject: ${}</p>
+        <p id="object__title__1">Title: ${}</p>
+        <p id="object__resource__1">Resource: ${}</p>
+        <p></p>
+      </div>
+
+      <hr />
+
+      <!-- Buttons for Topic selection-->
+      <h2 id="select__topic">Select the Topic</h2>
+      <div class="button__group">
+        <button>CSS</button>
+        <button>Week 2</button>
+        <button>Week 3</button>
+        <button>Week 4</button>
+        <button>Week 5</button>
+        <button>Week 6</button>
+        <button>Week 7</button>
+        <button>Week 8</button>
+        <button>Week 9</button>
+        <button>Week 10</button>
+        <button>Week 11</button>
+        <button>Week 12</button>
+        <button>Week 13</button>
+        <button>Week 14</button>
+        <button>Week 15</button>
+        <button>Week 16</button>
+      </div>
+      <br />
+      <div class="resource__appears">
+        <p>Resources by TOPIC will appear here!</p>
+        <!--First resourse from object eg [0]-->
+        <p id="object__week__0">Week:${}</p>
+        <p id="object__subject__0">Subject: ${}</p>
+        <p id="object__title__0">Title: ${}</p>
+        <p id="object__resource__0">Resource: ${}</p>
+        <p>
+          <!--Second resourse from object eg [1]-->
+        </p>
+
+        <p id="object__week__1">Week:${}</p>
+        <p id="object__subject__1">Subject: ${}</p>
+        <p id="object__title__1">Title: ${}</p>
+        <p id="object__resource__1">Resource: ${}</p>
+        <p></p>
+      </div>
+
+      <hr />
+
+      <!--Section to display the course overview image-->
+      <div>
+        <h2 id="course__overview">Course Overview</h2>
+        <img class="course__image" src="../images/overview.png" />
+      </div>
+    </div>
+
+    <!--Screen 2-->
+    <div class="screen" id="screen2">
+      <!-- HTML for Screen 2 -->
+      <h1>Screen 2</h1>
+    </div>
+    <div class="screen" id="screen3">
+      <!-- HTML for Screen 3 -->
+      <h1>Screen 3</h1>
+    </div>
+    <div class="screen" id="screen4">
+      <!-- HTML for Screen 4 -->
+      <h1>Screen 4</h1>
+    </div>
+
+    <div id="navigation">
+      <nav>
+        <!-- Menu icons from Font Awesome -->
+        <!-- Search for icons at: https://fontawesome.com -->
+        <a
+          id="home__link"
+          href="#screen__1"
+          class="menu active"
+          onclick="showScreen1()"
+          ><i id="home__icon" class="fas fa-home fa-2x"></i><br />HOME</a
+        >
+        <a id="plus__link" class="menu" onclick="showScreen2()"
+          ><i id="plus__icon" class="fas fa-plus fa-2x"></i><br />POST</a
+        >
+        <a id="search__link" class="menu" onclick="showScreen3()"
+          ><i id="search__icon" class="fas fa-search fa-2x"></i><br />SEARCH</a
+        >
+        <a id="bin__link" class="menu" onclick="showScreen4()"
+          ><i id="bin__icon" class="fas fa-dumpster fa-2x"></i><br />DELETE</a
+        >
+      </nav>
+    </div>
+    <!-- Load JavaScript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/particle-api-js/7.3.0/particle.min.js"></script>-->
