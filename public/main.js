@@ -39,6 +39,12 @@ function displayWeekOneResources(weekOneResources) {
   // Show word
   const showWeekOneDate = document.getElementById("object__week__1");
   showWeekOneDate.innerText = weekOneResources.payload[0].week;
+  const showWeekOneSubject = document.getElementById("object__subject__1");
+  showWeekOneSubject.innerText = weekOneResources.payload[0].subject;
+  const showWeekOneTitle = document.getElementById("object__title__1");
+  showWeekOneTitle.innerText = weekOneResources.payload[0].title;
+  const showWeekOneResource = document.getElementById("object__resource__1");
+  showWeekOneResource.setAttribute("href", weekOneResources.payload[0].resource);
 }
 
 buttonW1.addEventListener("click", getAndDisplayWeekOneResources);
