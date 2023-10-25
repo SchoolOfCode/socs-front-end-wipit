@@ -44,11 +44,13 @@ function displayWeekOneResources(weekOneResources) {
   const showWeekOneTitle = document.getElementById("object__title__1");
   showWeekOneTitle.innerText = weekOneResources.payload[0].title;
   const showWeekOneResource = document.getElementById("object__resource__1");
-  showWeekOneResource.setAttribute("href", weekOneResources.payload[0].resource);
+  showWeekOneResource.setAttribute(
+    "href",
+    weekOneResources.payload[0].resource
+  );
 }
 
 buttonW1.addEventListener("click", getAndDisplayWeekOneResources);
-
 
 //------------------------------------------------------------- WEEK 2
 
@@ -89,26 +91,26 @@ async function retrieveWeekTwoResources() {
 //   showWeekTwoResource.setAttribute("href", weekTwoResources.payload[0].resource);
 // }
 
-function displayWeekTwoResources(weekTwoResources){
-
-  const containerDiv = document.getElementById('resource-container');
-  for(let i=0; i < weekTwoResources.payload.length; i++){
-      // newResourceDiv = document.createElement('div');
-      newWeekP = document.createElement('p');
-      newWeekP.innerText = weekTwoResources.payload[i].week;
-      containerDiv.appendChild(newWeekP);
-      newSubjectP = document.createElement('p');
-      newSubjectP.innerText = weekTwoResources.payload[i].subject;
-      containerDiv.appendChild(newSubjectP);
-      newTitleP = document.createElement('p');
-      newTitleP.innerText = weekTwoResources.payload[i].title;
-      containerDiv.appendChild(newTitleP);
-    }
+function displayWeekTwoResources(weekTwoResources) {
+  const containerDiv = document.getElementById("resource-container");
+  for (let i = 0; i < weekTwoResources.payload.length; i++) {
+    // newResourceDiv = document.createElement('div');
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = weekTwoResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = weekTwoResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = weekTwoResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${weekTwoResources.payload[i].resource}`;
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
   }
+}
 
 buttonW2.addEventListener("click", getAndDisplayWeekTwoResources);
-
-
-
 
 // document.addEventListener("DOMContentLoaded", getAndDisplayWeekOneResources);
