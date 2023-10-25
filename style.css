@@ -1,7 +1,15 @@
 /* Add or modify CSS for your web app */
 
-/*Adding in custom colours
+/*Adding in custom colours*/
 
+:root {
+  --clr-ourGreen: rgb(6, 214, 160);
+  --clr-ourLightblue: rgb(50, 164, 220);
+  --clr-ourPink: rgb(239, 71, 111);
+  --clr-ourDarkblue: rgb(7, 59, 76);
+  --clr-ourYellow: rgb(255, 209, 102);
+  --clr-ourBackground: rgb(127, 179, 205);
+}
 
 
 
@@ -15,7 +23,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: rgb(127, 179, 205) ;
+    background-color: var(--clr-ourBackground);
     color:white;
   }
     
@@ -158,4 +166,10 @@ a{
 
 .heading__overview{
   margin-bottom: 300px
+}
+
+.course__image{
+  width: 85%;
+  border:solid 4px white;
+  border-radius: 10px;
 }
