@@ -8,7 +8,7 @@
   --clr-ourPink: rgb(239, 71, 111);
   --clr-ourDarkblue: rgb(7, 59, 76);
   --clr-ourYellow: rgb(255, 209, 102);
-  --clr-ourBackground: rgb(127, 179, 205);
+  --clr-ourBackground: rgb(149, 185, 202);
 }
 
 
@@ -79,6 +79,7 @@
     text-align: center;
     background-color: #ffffff;
     border: 1px solid #888888;
+    font-size: 1rem;
   }
   
   /* nav menu options */
@@ -91,7 +92,6 @@
       padding: 0.5em 0;
       text-align: center;
       background-color: #ffffff;
-      color: #bd3f9c;
       transition: 0.3s;
   }
   
@@ -129,6 +129,18 @@ img{
 
 #home__icon{
   color: rgb(6, 214, 160);
+}
+
+#plus__icon{
+  color:var(--clr-ourPink)
+}
+
+#search__icon{
+  color: var(--clr-ourLightblue);
+}
+
+#bin__icon{
+  color: var(--clr-ourYellow)
 }
 
 
@@ -172,4 +184,20 @@ a{
   width: 85%;
   border:solid 4px white;
   border-radius: 10px;
+}
+
+#home__link{
+  color: var(--clr-ourGreen);
+}
+
+#plus__link{
+  color:var(--clr-ourPink)
+}
+
+#search__link{
+  color: var(--clr-ourLightblue);
+}
+
+#bin__link{
+  color:var(--clr-ourYellow);
 }
