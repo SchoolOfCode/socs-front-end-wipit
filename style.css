@@ -1,5 +1,10 @@
 /* Add or modify CSS for your web app */
 
+/*Adding in custom colours
+
+
+
+
 * {
     box-sizing: border-box; /* use traditional box model sizing */
   }
@@ -118,9 +123,7 @@ img{
   color: rgb(6, 214, 160);
 }
 
-.heading__subject{
-  margin-bottom: 200px;
-}
+
 
 .button__group{
   display: grid;
@@ -147,8 +150,12 @@ a{
     text-decoration: none;
 }
 
-#week__button, #topic__button{
+#week__button, #topic__button, #overview__button{
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+.heading__overview{
+  margin-bottom: 300px
 }

@@ -1,38 +1,55 @@
 <mxfile host="65bd71144e">
     <diagram id="qu6RDYhAJEcuWV4elglb" name="Page-1">
-        <mxGraphModel dx="560" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="816" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="4" value="" style="edgeStyle=none;html=1;" parent="1" source="2" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="SPRINT 1&lt;br&gt;&amp;nbsp;Creating files" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+                <mxCell id="2" value="SPRINT 1&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="340" y="10" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="3" value="Make basic files;&lt;br&gt;index.html&lt;br&gt;style.css&lt;br&gt;script.js" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="340" y="100" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="" style="edgeStyle=none;html=1;" parent="1" source="5" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="5" value="Set up html for basic out line of:&lt;br&gt;4 screens&lt;br&gt;1 nav-bar at base" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="340" y="200" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="" style="edgeStyle=none;html=1;" parent="1" source="10" target="17" edge="1">
+                <mxCell id="18" value="" style="edgeStyle=none;html=1;" parent="1" source="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="405" y="430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="10" target="19">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="340" y="300" width="120" height="60" as="geometry"/>
+                <mxCell id="10" value="Add in CSS styling for first screen:&lt;br&gt;&lt;br&gt;- Add custom colours as var()&lt;br&gt;&lt;br&gt;- boxes&lt;br&gt;-buttons&lt;br&gt;-links&lt;br&gt;-font style/weight/color&lt;br&gt;-background color&lt;br&gt;-padding&lt;br&gt;-margin&lt;br&gt;-border-radius for smooth edges" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="300" width="180" height="240" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="GitHub&lt;br&gt;&lt;br&gt;Add Sprint 1 as a milestone&lt;br&gt;with issues" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
                     <mxGeometry x="550" y="10" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="Install packages" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="340" y="390" width="120" height="60" as="geometry"/>
+                <mxCell id="22" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="19" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Add in links &amp;lt;a&amp;gt; to move to different sections of Screen 1&lt;br&gt;&lt;br&gt;CSS styling to make main-links white with no under-lining" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="585" width="140" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="21" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Functions to hide all screens and then make screen 1 appear" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="760" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Import socs logo and course overview image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="860" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
