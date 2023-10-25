@@ -49,4 +49,66 @@ function displayWeekOneResources(weekOneResources) {
 
 buttonW1.addEventListener("click", getAndDisplayWeekOneResources);
 
+
+//------------------------------------------------------------- WEEK 2
+
+const buttonW2 = document.querySelector("#WeekTwo__Button");
+
+async function getAndDisplayWeekTwoResources() {
+  const weekTwoResources = await retrieveWeekTwoResources();
+  displayWeekTwoResources(weekTwoResources);
+}
+
+async function retrieveWeekTwoResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/week2", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  //return the parsed JSON from the response (which contains weather object)
+  const data = await response.json();
+  return data;
+}
+
+// function displayWeekTwoResources(weekTwoResources) {
+//   // Show word
+//   const showWeekTwoDate = document.getElementById("object__week__2");
+//   showWeekTwoDate.innerText = weekTwoResources.payload[0].week;
+//   const showWeekTwoSubject = document.getElementById("object__subject__2");
+//   showWeekTwoSubject.innerText = weekTwoResources.payload[0].subject;
+//   const showWeekTwoTitle = document.getElementById("object__title__2");
+//   showWeekTwoTitle.innerText = weekTwoResources.payload[0].title;
+//   const showWeekTwoResource = document.getElementById("object__resource__2");
+//   showWeekTwoResource.setAttribute("href", weekTwoResources.payload[0].resource);
+// }
+
+function displayWeekTwoResources(weekTwoResources){
+
+  const containerDiv = document.getElementById('resource-container');
+  for(let i=0; i < weekTwoResources.payload.length; i++){
+      // newResourceDiv = document.createElement('div');
+      newWeekP = document.createElement('p');
+      newWeekP.innerText = weekTwoResources.payload[i].week;
+      containerDiv.appendChild(newWeekP);
+      newSubjectP = document.createElement('p');
+      newSubjectP.innerText = weekTwoResources.payload[i].subject;
+      containerDiv.appendChild(newSubjectP);
+      newTitleP = document.createElement('p');
+      newTitleP.innerText = weekTwoResources.payload[i].title;
+      containerDiv.appendChild(newTitleP);
+    }
+  }
+
+buttonW2.addEventListener("click", getAndDisplayWeekTwoResources);
+
+
+
+
 // document.addEventListener("DOMContentLoaded", getAndDisplayWeekOneResources);
