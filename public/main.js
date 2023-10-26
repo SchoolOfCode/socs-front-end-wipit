@@ -36,7 +36,7 @@ async function retrieveWeekOneResources() {
 }
 
 // First attempt to display database response data using premade <p> tags
-function displayWeekOneResources(weekOneResources) {
+/*function displayWeekOneResources(weekOneResources) {
   // Show word
   const showWeekOneDate = document.getElementById("object__week__1");
   showWeekOneDate.innerText = weekOneResources.payload[0].week;
@@ -52,7 +52,7 @@ function displayWeekOneResources(weekOneResources) {
 }
 
 buttonW1.addEventListener("click", getAndDisplayWeekOneResources);
-
+*/
 //------------------------------------------------------------- WEEK 2
 
 const buttonW2 = document.querySelector("#WeekTwo__Button");
