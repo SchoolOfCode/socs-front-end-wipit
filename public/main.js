@@ -476,3 +476,56 @@ function displayWeekEightResources(weekEightResources) {
 }
 
 buttonW8.addEventListener("click", getAndDisplayWeekEightResources);
+
+
+/// DISPLAY BY SUBJECT
+
+const buttonCSS = document.querySelector("#CSS__button");
+
+async function getAndDisplayCSSResources() {
+  const CSSResources = await retrieveCSSResources();
+  displayCSSResources(CSSResources);
+}
+
+async function retrieveCSSResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/CSS", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  //return the parsed JSON from the response (which contains weather object)
+  const data = await response.json();
+  return data;
+}
+
+function displayCSSResources(CSSResources) {
+  clearResources();
+  const containerDiv = document.getElementById("resource__container__subject");
+  for (let i = 0; i < CSSResources.payload.length; i++) {
+
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = CSSResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = CSSResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = CSSResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${CSSResources.payload[i].resource}`;
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonCSS.addEventListener("click", getAndDisplayCSSResources);
+
+// FUNCTION WEEK ONE COMPLETED ABOVE =================================================
