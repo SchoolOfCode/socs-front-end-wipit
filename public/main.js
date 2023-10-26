@@ -65,8 +65,6 @@ function clearSubjectResources() {
   containerDiv.innerHTML = ""; // Clear the contents of the container
 }
 
-
-
 //------------------------------------------------------------- WEEK 1
 
 const buttonW1 = document.querySelector("#WeekOne__Button");
@@ -98,7 +96,6 @@ function displayWeekOneResources(weekOneResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekOneResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekOneResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -110,6 +107,7 @@ function displayWeekOneResources(weekOneResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekOneResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -118,10 +116,6 @@ function displayWeekOneResources(weekOneResources) {
 buttonW1.addEventListener("click", getAndDisplayWeekOneResources);
 
 // FUNCTION WEEK ONE COMPLETED ABOVE =================================================
-
-
-
-
 
 //------------------------------------------------------------- WEEK 2
 
@@ -167,10 +161,9 @@ function displayWeekTwoResources(weekTwoResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekTwoResources.payload.length; i++) {
-
     /* Find  a way to clear the div before we repopulate*/
 
-// Create a p tag where the data will be input. p is combined with inner text, from week column in database. resource-container is appended in html
+    // Create a p tag where the data will be input. p is combined with inner text, from week column in database. resource-container is appended in html
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekTwoResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -182,6 +175,7 @@ function displayWeekTwoResources(weekTwoResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekTwoResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -219,7 +213,6 @@ function displayWeekThreeResources(weekThreeResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekThreeResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekThreeResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -231,6 +224,7 @@ function displayWeekThreeResources(weekThreeResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekThreeResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -268,7 +262,6 @@ function displayWeekFourResources(weekFourResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekFourResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekFourResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -280,6 +273,7 @@ function displayWeekFourResources(weekFourResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekFourResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -317,7 +311,6 @@ function displayWeekFiveResources(weekFiveResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekFiveResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekFiveResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -329,6 +322,7 @@ function displayWeekFiveResources(weekFiveResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekFiveResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -366,7 +360,6 @@ function displayWeekSixResources(weekSixResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekSixResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekSixResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -378,6 +371,7 @@ function displayWeekSixResources(weekSixResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekSixResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -415,7 +409,6 @@ function displayWeekSevenResources(weekSevenResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekSevenResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekSevenResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -427,6 +420,7 @@ function displayWeekSevenResources(weekSevenResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekSevenResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -464,7 +458,6 @@ function displayWeekEightResources(weekEightResources) {
   clearWeekResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekEightResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekEightResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -476,13 +469,13 @@ function displayWeekEightResources(weekEightResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${weekEightResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
 }
 
 buttonW8.addEventListener("click", getAndDisplayWeekEightResources);
-
 
 /// DISPLAY BY SUBJECT
 
@@ -515,7 +508,6 @@ function displayCSSResources(CSSResources) {
   clearSubjectResources();
   const containerDiv = document.getElementById("resource__container__subject");
   for (let i = 0; i < CSSResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = CSSResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -527,6 +519,7 @@ function displayCSSResources(CSSResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${CSSResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -565,7 +558,6 @@ function displayHTMLResources(HTMLResources) {
   clearSubjectResources();
   const containerDiv = document.getElementById("resource__container__subject");
   for (let i = 0; i < HTMLResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = HTMLResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -577,6 +569,7 @@ function displayHTMLResources(HTMLResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${HTMLResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -595,11 +588,14 @@ async function getAndDisplayJavascriptResources() {
 
 async function retrieveJavascriptResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/Javascript", {
-    headers: {
-      Accept: "application/json",
-    },
-  });
+  const response = await fetch(
+    "http://localhost:3000/api/resources/Javascript",
+    {
+      headers: {
+        Accept: "application/json",
+      },
+    }
+  );
   //Check if response failed, if so log an error and halt the app
   if (!response.ok) {
     console.error(`Status: ${response.status}`);
@@ -615,7 +611,6 @@ function displayJavascriptResources(JavascriptResources) {
   clearSubjectResources();
   const containerDiv = document.getElementById("resource__container__subject");
   for (let i = 0; i < JavascriptResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = JavascriptResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -627,6 +622,7 @@ function displayJavascriptResources(JavascriptResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${JavascriptResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -665,7 +661,6 @@ function displayMindsetResources(MindsetResources) {
   clearSubjectResources();
   const containerDiv = document.getElementById("resource__container__subject");
   for (let i = 0; i < MindsetResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = MindsetResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -677,6 +672,7 @@ function displayMindsetResources(MindsetResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${MindsetResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
@@ -715,7 +711,6 @@ function displayNodeResources(NodeResources) {
   clearSubjectResources();
   const containerDiv = document.getElementById("resource__container__subject");
   for (let i = 0; i < NodeResources.payload.length; i++) {
-
     newWeekP = document.createElement("p");
     newWeekP.innerText = NodeResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
@@ -727,6 +722,7 @@ function displayNodeResources(NodeResources) {
     containerDiv.appendChild(newTitleP);
     newAnchorElement = document.createElement("a");
     newAnchorElement.href = `${NodeResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
     newAnchorElement.textContent = "Link";
     containerDiv.appendChild(newAnchorElement);
   }
