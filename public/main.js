@@ -223,3 +223,241 @@ function displayWeekThreeResources(weekThreeResources) {
 buttonW3.addEventListener("click", getAndDisplayWeekThreeResources);
 
 // FUNCTION WEEK THREE COMPLETED ABOVE =================================================
+
+const buttonW4 = document.querySelector("#WeekFour__Button");
+
+async function getAndDisplayWeekFourResources() {
+  const weekFourResources = await retrieveWeekFourResources();
+  displayWeekFourResources(weekFourResources);
+}
+
+async function retrieveWeekFourResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/week4", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  const data = await response.json();
+  return data;
+}
+
+function displayWeekFourResources(weekFourResources) {
+  const containerDiv = document.getElementById("resource__container__week");
+  for (let i = 0; i < weekFourResources.payload.length; i++) {
+
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = weekFourResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = weekFourResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = weekFourResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${weekFourResources.payload[i].resource}`;
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonW4.addEventListener("click", getAndDisplayWeekFourResources);
+
+// FUNCTION WEEK FOUR COMPLETED ABOVE =================================================
+
+const buttonW5 = document.querySelector("#WeekFive__Button");
+
+async function getAndDisplayWeekFiveResources() {
+  const weekFiveResources = await retrieveWeekFiveResources();
+  displayWeekFiveResources(weekFiveResources);
+}
+
+async function retrieveWeekFiveResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/week5", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  const data = await response.json();
+  return data;
+}
+
+function displayWeekFiveResources(weekFiveResources) {
+  const containerDiv = document.getElementById("resource__container__week");
+  for (let i = 0; i < weekFiveResources.payload.length; i++) {
+
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = weekFiveResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = weekFiveResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = weekFiveResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${weekFiveResources.payload[i].resource}`;
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonW5.addEventListener("click", getAndDisplayWeekFiveResources);
+
+// FUNCTION WEEK FIVE COMPLETED ABOVE =================================================
+
+const buttonW6 = document.querySelector("#WeekSix__Button");
+
+async function getAndDisplayWeekSixResources() {
+  const weekSixResources = await retrieveWeekSixResources();
+  displayWeekSixResources(weekSixResources);
+}
+
+async function retrieveWeekSixResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/week6", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  const data = await response.json();
+  return data;
+}
+
+function displayWeekSixResources(weekSixResources) {
+  const containerDiv = document.getElementById("resource__container__week");
+  for (let i = 0; i < weekSixResources.payload.length; i++) {
+
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = weekSixResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = weekSixResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = weekSixResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${weekSixResources.payload[i].resource}`;
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonW6.addEventListener("click", getAndDisplayWeekSixResources);
+
+// FUNCTION WEEK SIX COMPLETED ABOVE =================================================
+
+const buttonW7 = document.querySelector("#WeekSeven__Button");
+
+async function getAndDisplayWeekSevenResources() {
+  const weekSevenResources = await retrieveWeekSevenResources();
+  displayWeekSevenResources(weekSevenResources);
+}
+
+async function retrieveWeekSevenResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/week7", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  const data = await response.json();
+  return data;
+}
+
+function displayWeekSevenResources(weekSevenResources) {
+  const containerDiv = document.getElementById("resource__container__week");
+  for (let i = 0; i < weekSevenResources.payload.length; i++) {
+
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = weekSevenResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = weekSevenResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = weekSevenResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${weekSevenResources.payload[i].resource}`;
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonW7.addEventListener("click", getAndDisplayWeekSevenResources);
+
+// FUNCTION WEEK SEVEN COMPLETED ABOVE =================================================
+
+const buttonW8 = document.querySelector("#WeekEight__Button");
+
+async function getAndDisplayWeekEightResources() {
+  const weekEightResources = await retrieveWeekEightResources();
+  displayWeekEightResources(weekEightResources);
+}
+
+async function retrieveWeekEightResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/week8", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  const data = await response.json();
+  return data;
+}
+
+function displayWeekEightResources(weekEightResources) {
+  const containerDiv = document.getElementById("resource__container__week");
+  for (let i = 0; i < weekEightResources.payload.length; i++) {
+
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = weekEightResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = weekEightResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = weekEightResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${weekEightResources.payload[i].resource}`;
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonW8.addEventListener("click", getAndDisplayWeekEightResources);
