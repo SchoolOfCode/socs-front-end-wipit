@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Organisation App</title>
+    <title>SOCS - School of Code Stash</title>
     <!-- Load Font Awesome for Icons -->
     <link
       rel="stylesheet"
@@ -22,15 +22,23 @@
       <!-- Welcome screen-->
       <div class="welcome__screen">
         <h1>SOCS</h1>
-        <br>
-        <img class="welcome__logo" src="../images/socks.png" alt="socs logo">
-        <br>
+        <br />
+        <img
+          class="welcome__logo"
+          src="../images/socks.png"
+          alt="Image of the School of Code Stash (SOCS) logo."
+        />
+        <br />
         <h1>School of Code Stash</h1>
       </div>
 
       <h1 id="screen__1">SOCS</h1>
       <p>School of Code Stash</p>
-      <img id="socs__logo" src="../images/socks.png" alt="socs logo">
+      <img
+        id="socs__logo"
+        src="../images/socks.png"
+        alt="Smaller image of the School of Code Stash (SOCS) logo."
+      />
 
       <div class="heading heading__week">
         <a id="week__button" href="#select__week">Resources by Week</a>
@@ -46,14 +54,14 @@
 
       <h2 id="select__week">Select the Week</h2>
       <div class="button__group">
-        <button id="WeekOne__Button">Week 1</button>
-        <button id="WeekTwo__Button">Week 2</button>
-        <button>Week 3</button>
-        <button>Week 4</button>
-        <button>Week 5</button>
-        <button>Week 6</button>
-        <button>Week 7</button>
-        <button>Week 8</button>
+        <button id="WeekOne__Button" type="button">Week 1</button>
+        <button id="WeekTwo__Button" type="button">Week 2</button>
+        <button id="WeekThree__Button" type="button">Week 3</button>
+        <button id="WeekFour__Button" type="button">Week 4</button>
+        <button id="WeekFive__Button" type="button">Week 5</button>
+        <button id="WeekSix__Button" type="button">Week 6</button>
+        <button id="WeekSeven__Button" type="button">Week 7</button>
+        <button id="WeekEight__Button" type="button">Week 8</button>
         <button>Week 9</button>
         <button>Week 10</button>
         <button>Week 11</button>
@@ -66,22 +74,9 @@
       <br />
       <div class="resource__appears">
         <p>Resources by WEEK will appear here!</p>
-        
-        <!--First resourse from object eg [1]-->
-        <p id="object__week__1">Week:</p>
-        <p id="object__subject__1">Subject:</p>
-        <p id="object__title__1">Title:</p>
-        <a id="object__resource__1">Resource:</a>
-        <p id="object__week__2">Week</p>
-        <p id="object__subject__2">Subject:</p>
-        <p id="object__title__2">Title:</p>
-        <a id="object__resource__2">Resource:</a>
-        
-        <!-- We want retrieve full resource object inside a div-->
-        <div id="resource-container">
-          
-        </div>
 
+        <!-- We want retrieve full resource object inside a div-->
+        <div id="resource__container__continuity"></div>
       </div>
 
       <hr />
@@ -89,40 +84,33 @@
       <!-- Buttons for Topic selection-->
       <h2 id="select__topic">Select the Topic</h2>
       <div class="button__group">
-        <button>CSS</button>
-        <button>Week 2</button>
-        <button>Week 3</button>
-        <button>Week 4</button>
-        <button>Week 5</button>
-        <button>Week 6</button>
-        <button>Week 7</button>
-        <button>Week 8</button>
-        <button>Week 9</button>
-        <button>Week 10</button>
-        <button>Week 11</button>
-        <button>Week 12</button>
-        <button>Week 13</button>
-        <button>Week 14</button>
-        <button>Week 15</button>
-        <button>Week 16</button>
+        <button id="CSS__button" type="button">CSS</button>
+        <button id="HTML__button" type="button">HTML</button>
+        <button id="Javascript__button" type="button">Javascript</button>
+        <button id="Mindset__button" type="button">Mindset</button>
+        <button id="Node__button" type="button">Node.js</button>
+        <button id="Testing__button" type="button">Testing</button>
+        <button id="SQL__button" type="button">SQL</button>
+        <button id="API__button" type="button">API</button>
       </div>
       <br />
       <div class="resource__appears">
         <p>Resources by TOPIC will appear here!</p>
-        <!--First resource from object eg [0]-->
-        <p id="object__week__1">Week:</p>
-        <p id="object__subject__1">Subject:</p>
-        <p id="object__title__1">Title:</p>
-        <p id="object__resource__1">Resource:</p>
-        <p></p>
+
+        <!-- We want retrieve full resource object inside a div-->
+        <div id="resource__container__subject"></div>
       </div>
 
-      <hr>
+      <hr />
 
       <!--Section to display the course overview image-->
       <div>
         <h2 id="course__overview">Course Overview</h2>
-        <img alt="image of course overview" class="course__image" src="../images/overview.png">
+        <img
+          alt="A list of of subjects covered in each week of the School of Code Bootcamp."
+          class="course__image"
+          src="../images/overview.png"
+        />
       </div>
     </div>
 
@@ -173,5 +161,3 @@
     <script src="../script.js"></script>
   </body>
 </html>
-
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/particle-api-js/7.3.0/particle.min.js"></script>-->
