@@ -35,6 +35,7 @@ async function retrieveWeekOneResources() {
   return data;
 }
 
+// First attempt to display database response data using premade <p> tags
 function displayWeekOneResources(weekOneResources) {
   // Show word
   const showWeekOneDate = document.getElementById("object__week__1");
@@ -91,10 +92,14 @@ async function retrieveWeekTwoResources() {
 //   showWeekTwoResource.setAttribute("href", weekTwoResources.payload[0].resource);
 // }
 
+// function loops through response data and populates the html with information
 function displayWeekTwoResources(weekTwoResources) {
   const containerDiv = document.getElementById("resource-container");
   for (let i = 0; i < weekTwoResources.payload.length; i++) {
-    // newResourceDiv = document.createElement('div');
+
+    /* Find  a way to clear the div before we repopulate*/
+    
+// Create a p tag where the data will be input. p is combined with inner text, from week column in database. resource-container is appended in html
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekTwoResources.payload[i].week;
     containerDiv.appendChild(newWeekP);
