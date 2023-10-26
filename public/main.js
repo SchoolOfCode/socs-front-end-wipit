@@ -65,7 +65,7 @@ async function getAndDisplayWeekOneResources() {
 
 async function retrieveWeekOneResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/", {
+  const response = await fetch("http://localhost:3000/api/resources", {
     headers: {
       Accept: "application/json",
     },
@@ -82,7 +82,7 @@ async function retrieveWeekOneResources() {
 }
 
 function displayWeekOneResources(weekOneResources) {
-  const containerDiv = document.getElementById("resource-container");
+  const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekOneResources.payload.length; i++) {
 
     newWeekP = document.createElement("p");
@@ -150,11 +150,11 @@ async function retrieveWeekTwoResources() {
 
 // function loops through response data and populates the html with information
 function displayWeekTwoResources(weekTwoResources) {
-  const containerDiv = document.getElementById("resource-container");
+  const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekTwoResources.payload.length; i++) {
 
     /* Find  a way to clear the div before we repopulate*/
-    
+
 // Create a p tag where the data will be input. p is combined with inner text, from week column in database. resource-container is appended in html
     newWeekP = document.createElement("p");
     newWeekP.innerText = weekTwoResources.payload[i].week;
@@ -185,7 +185,7 @@ async function getAndDisplayWeekThreeResources() {
 
 async function retrieveWeekThreeResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week3/", {
+  const response = await fetch("http://localhost:3000/api/resources/week3", {
     headers: {
       Accept: "application/json",
     },
@@ -201,7 +201,7 @@ async function retrieveWeekThreeResources() {
 }
 
 function displayWeekThreeResources(weekThreeResources) {
-  const containerDiv = document.getElementById("resource-container");
+  const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekThreeResources.payload.length; i++) {
 
     newWeekP = document.createElement("p");
