@@ -1,5 +1,3 @@
-/* Add or modify CSS for your web app */
-
 /*Adding in custom colours*/
 
 :root {
@@ -50,22 +48,6 @@
       display: none;
   }
   
-  /* can add custom CSS for each specific screen */
-  #screen1 {
-  
-  }
-  
-  #screen2 {
-  
-  }
-  
-  #screen3 {
-  
-  }
-  
-  #screen4 {
-  
-  }
   
   /* #navigation menu fixed to bottom of viewport */
   #navigation {
@@ -130,6 +112,12 @@ img{
 #socs__logo{
   margin-bottom: 20px;
 }
+
+#tiny__socs{
+width:2rem;
+height: 2rem;
+}
+
 .heading{
   padding-block: 2rem;
   margin: 2rem;
@@ -142,7 +130,7 @@ img{
 
 .button__group{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   
 }
@@ -191,6 +179,12 @@ a{
   background-color: var(--clr-ourYellow);
 }
 
+.pick__week{
+display: flex;
+vertical-align: bottom;
+gap: 3rem;
+}
+
 
 
 /* Nav link & icon styling */
@@ -224,4 +218,24 @@ a{
 
 #bin__icon{
   color: var(--clr-ourYellow)
+}
+
+#back__icon{
+  color: black;
+}
+
+#resource__container__week{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+border:solid 2px white;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+background-color: var(--clr-ourGreen);
+}
+
+#resource__container__week > a {
+text-decoration:underline;
 }
