@@ -10,7 +10,7 @@
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
+    >
     <!-- Load CSS stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
@@ -22,7 +22,7 @@
       <!-- Welcome screen-->
       <div class="welcome__screen">
         <h1>SOCS</h1>
-        <br />
+        <br>
         <img
           class="welcome__logo"
           src="../images/socks.png"
@@ -41,10 +41,10 @@
       />
 
       <div class="heading heading__week">
-        <a id="week__button" href="#select__week">Resources by Week</a>
+        <a id="week__button" href="#tiny__socs">Resources by Week</a>
       </div>
       <div class="heading heading__subject">
-        <a id="topic__button" href="#select__topic">Resources by Topic</a>
+        <a id="topic__button" href="#select__topic">Resources by Subject</a>
       </div>
       <div class="heading heading__overview">
         <a id="overview__button" href="#course__overview">Course Overview</a>
@@ -53,7 +53,9 @@
       <!-- Buttons for Week selection-->
 
       <div class="pick__week">
-        <i id="back__icon" class="fas fa-arrow-left fa-2x"></i>
+        <a href="#screen__1"><i id="back__icon" class="fas fa-arrow-left fa-2x"></i>
+        </a>
+
         <h2 id="select__week">Select the Week</h2>
       <img id="tiny__socs" src="../images/socks.png">
     </div>
@@ -88,7 +90,12 @@
       <hr />
 
       <!-- Buttons for Topic selection-->
-      <h2 id="select__topic">Select the Topic</h2>
+      <div id="select__topic" class="pick__week">
+        <a href="#screen__1"><i id="back__icon" class="fas fa-arrow-left fa-2x"></i>
+        </a>
+        <h2 id="select__week">Select the Subject</h2>
+      <img id="tiny__socs" src="../images/socks.png">
+    </div>
       <div class="button__group">
         <button id="CSS__button" type="button">CSS</button>
         <button id="HTML__button" type="button">HTML</button>
@@ -111,30 +118,55 @@
 
       <!--Section to display the course overview image-->
       <div>
-        <h2 id="course__overview">Course Overview</h2>
+        <div id="course__overview" class="pick__week">
+          <a href="#screen__1"><i id="back__icon" class="fas fa-arrow-left fa-2x"></i>
+          </a>
+          <h2 id="select__week">Course Overview</h2>
+        <img id="tiny__socs" src="../images/socks.png">
+         </div>
+      </div>
         <img
           alt="A list of of subjects covered in each week of the School of Code Bootcamp."
           class="course__image"
-          src="../images/overview.png"
-        />
-      </div>
-    </div>
+          src="../images/overview.png">
+  </div>
 
     <!--Screen 2-->
     <div class="screen" id="screen2">
       <!-- HTML for Screen 2 -->
+      <div>
+        <div id="course__overview" class="pick__week">
+          <i id="back__icon" class="fas fa-arrow-left fa-2x"></i>
+          <h2 id="select__week">Select the Week</h2>
+        <img id="tiny__socs" src="../images/socks.png">
+         </div>
+      </div>
       <div class="heading heading__post">
         <h2>Post a Resource</h2>
       </div>
     </div>
     <div class="screen" id="screen3">
       <!-- HTML for Screen 3 -->
+      <div>
+        <div id="course__overview" class="pick__week">
+          <i id="back__icon" class="fas fa-arrow-left fa-2x"></i>
+          <h2 id="select__week">Select the Week</h2>
+        <img id="tiny__socs" src="../images/socks.png">
+         </div>
+      </div>
       <div class="heading heading__search">
         <h2>Search for a Resource</h2>
       </div>
     </div>
     <div class="screen" id="screen4">
       <!-- HTML for Screen 4 -->
+      <div>
+        <div id="course__overview" class="pick__week">
+          <i id="back__icon" class="fas fa-arrow-left fa-2x"></i>
+          <h2 id="select__week">Select the Week</h2>
+        <img id="tiny__socs" src="../images/socks.png">
+         </div>
+      </div>
       <div class="heading heading__delete">
         <h2>Delete a Resource</h2>
       </div>
