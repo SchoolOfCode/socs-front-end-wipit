@@ -54,6 +54,13 @@
 buttonW1.addEventListener("click", getAndDisplayWeekOneResources);
 */
 
+// function to clear containerDiv
+function clearResources() {
+  const containerDiv = document.getElementById("resource__container__week");
+  containerDiv.innerHTML = ""; // Clear the contents of the container
+}
+
+
 //------------------------------------------------------------- WEEK 1
 
 const buttonW1 = document.querySelector("#WeekOne__Button");
@@ -82,6 +89,7 @@ async function retrieveWeekOneResources() {
 }
 
 function displayWeekOneResources(weekOneResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekOneResources.payload.length; i++) {
 
@@ -150,6 +158,7 @@ async function retrieveWeekTwoResources() {
 
 // function loops through response data and populates the html with information
 function displayWeekTwoResources(weekTwoResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekTwoResources.payload.length; i++) {
 
@@ -201,6 +210,7 @@ async function retrieveWeekThreeResources() {
 }
 
 function displayWeekThreeResources(weekThreeResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekThreeResources.payload.length; i++) {
 
@@ -249,6 +259,7 @@ async function retrieveWeekFourResources() {
 }
 
 function displayWeekFourResources(weekFourResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekFourResources.payload.length; i++) {
 
@@ -297,6 +308,7 @@ async function retrieveWeekFiveResources() {
 }
 
 function displayWeekFiveResources(weekFiveResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekFiveResources.payload.length; i++) {
 
@@ -345,6 +357,7 @@ async function retrieveWeekSixResources() {
 }
 
 function displayWeekSixResources(weekSixResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekSixResources.payload.length; i++) {
 
@@ -393,6 +406,7 @@ async function retrieveWeekSevenResources() {
 }
 
 function displayWeekSevenResources(weekSevenResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekSevenResources.payload.length; i++) {
 
@@ -441,6 +455,7 @@ async function retrieveWeekEightResources() {
 }
 
 function displayWeekEightResources(weekEightResources) {
+  clearResources();
   const containerDiv = document.getElementById("resource__container__week");
   for (let i = 0; i < weekEightResources.payload.length; i++) {
 
