@@ -729,3 +729,155 @@ function displayNodeResources(NodeResources) {
 }
 
 buttonNode.addEventListener("click", getAndDisplayNodeResources);
+
+// FUNCTION Node COMPLETED ABOVE =================================================
+
+const buttonTesting = document.querySelector("#Testing__button");
+
+async function getAndDisplayTestingResources() {
+  const TestingResources = await retrieveTestingResources();
+  displayTestingResources(TestingResources);
+}
+
+async function retrieveTestingResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/Testing", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  //return the parsed JSON from the response (which contains weather object)
+  const data = await response.json();
+  return data;
+}
+
+function displayTestingResources(TestingResources) {
+  clearSubjectResources();
+  const containerDiv = document.getElementById("resource__container__subject");
+  for (let i = 0; i < TestingResources.payload.length; i++) {
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = TestingResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = TestingResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = TestingResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${TestingResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonTesting.addEventListener("click", getAndDisplayTestingResources);
+
+// FUNCTION Testing COMPLETED ABOVE =================================================
+
+const buttonSQL = document.querySelector("#SQL__button");
+
+async function getAndDisplaySQLResources() {
+  const SQLResources = await retrieveSQLResources();
+  displaySQLResources(SQLResources);
+}
+
+async function retrieveSQLResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/SQL", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  //return the parsed JSON from the response (which contains weather object)
+  const data = await response.json();
+  return data;
+}
+
+function displaySQLResources(SQLResources) {
+  clearSubjectResources();
+  const containerDiv = document.getElementById("resource__container__subject");
+  for (let i = 0; i < SQLResources.payload.length; i++) {
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = SQLResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = SQLResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = SQLResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${SQLResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonSQL.addEventListener("click", getAndDisplaySQLResources);
+
+// FUNCTION SQL COMPLETED ABOVE =================================================
+
+const buttonAPI = document.querySelector("#API__button");
+
+async function getAndDisplayAPIResources() {
+  const APIResources = await retrieveAPIResources();
+  displayAPIResources(APIResources);
+}
+
+async function retrieveAPIResources() {
+  //Send GET request to the resource library API. Await the response
+  const response = await fetch("http://localhost:3000/api/resources/API", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  //Check if response failed, if so log an error and halt the app
+  if (!response.ok) {
+    console.error(`Status: ${response.status}`);
+    console.error(`Text: ${await response.text()}`);
+    return;
+  }
+  //return the parsed JSON from the response (which contains weather object)
+  const data = await response.json();
+  return data;
+}
+
+function displayAPIResources(APIResources) {
+  clearSubjectResources();
+  const containerDiv = document.getElementById("resource__container__subject");
+  for (let i = 0; i < APIResources.payload.length; i++) {
+    newWeekP = document.createElement("p");
+    newWeekP.innerText = APIResources.payload[i].week;
+    containerDiv.appendChild(newWeekP);
+    newSubjectP = document.createElement("p");
+    newSubjectP.innerText = APIResources.payload[i].subject;
+    containerDiv.appendChild(newSubjectP);
+    newTitleP = document.createElement("p");
+    newTitleP.innerText = APIResources.payload[i].title;
+    containerDiv.appendChild(newTitleP);
+    newAnchorElement = document.createElement("a");
+    newAnchorElement.href = `${APIResources.payload[i].resource}`;
+    newAnchorElement.target = "_blank";
+    newAnchorElement.textContent = "Link";
+    containerDiv.appendChild(newAnchorElement);
+  }
+}
+
+buttonAPI.addEventListener("click", getAndDisplayAPIResources);
+
+// FUNCTION API COMPLETED ABOVE =================================================
