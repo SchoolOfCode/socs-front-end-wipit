@@ -64,7 +64,7 @@ function clearSubjectResources() {
   const containerDiv = document.getElementById("resource__container__subject");
   containerDiv.innerHTML = ""; // Clear the contents of the container
 }
-
+const baseUrl = "https://wipit-app.onrender.com"
 //------------------------------------------------------------- WEEK 1
 
 const buttonW1 = document.querySelector("#WeekOne__Button");
@@ -76,7 +76,7 @@ async function getAndDisplayWeekOneResources() {
 
 async function retrieveWeekOneResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources", {
+  const response = await fetch(`${baseUrl}/api/resources`, {
     headers: {
       Accept: "application/json",
     },
