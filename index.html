@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOCS - School of Code Stash</title>
+    <!-- Load Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Load CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- HTML for Screen 1 -->
+    <div class="screen" id="screen1">
+      <!-- Welcome screen-->
+      <div class="welcome__screen">
+        <h1>SOCS</h1>
+        <br />
+        <img
+          class="welcome__logo"
+          src="./images/socks.png"
+          alt="Image of the School of Code Stash (SOCS) logo."
+        />
+        <br />
+        <h1>School of Code Stash</h1>
+      </div>
+
+      <h1 id="screen__1">SOCS</h1>
+      <p>School of Code Stash</p>
+      <img
+        id="socs__logo"
+        src="./images/socks.png"
+        alt="Smaller image of the School of Code Stash (SOCS) logo."
+      />
+
+      <div class="heading heading__week">
+        <a id="week__button" href="#tiny__socs">Resources by Week</a>
+      </div>
+      <div class="heading heading__subject">
+        <a id="topic__button" href="#select__topic">Resources by Subject</a>
+      </div>
+      <div class="heading heading__overview">
+        <a id="overview__button" href="#course__overview">Course Overview</a>
+      </div>
+
+      <hr />
+      <!-- Buttons for Week selection-->
+
+      <div class="pick__week">
+        <a href="#screen__1"
+          ><i id="back__icon" class="fas fa-angle-left fa-2x"></i>
+        </a>
+
+        <h2 id="select__week">Select the Week</h2>
+        <img id="tiny__socs" src="./images/socks.png" />
+      </div>
+      <div class="button__group">
+        <button id="WeekOne__Button" type="button">Week 1</button>
+        <button id="WeekTwo__Button" type="button">Week 2</button>
+        <button id="WeekThree__Button" type="button">Week 3</button>
+        <button id="WeekFour__Button" type="button">Week 4</button>
+        <button id="WeekFive__Button" type="button">Week 5</button>
+        <button id="WeekSix__Button" type="button">Week 6</button>
+        <button id="WeekSeven__Button" type="button">Week 7</button>
+        <button id="WeekEight__Button" type="button">Week 8</button>
+        <button>Week 9</button>
+        <button>Week 10</button>
+        <button>Week 11</button>
+        <button>Week 12</button>
+        <button>Week 13</button>
+        <button>Week 14</button>
+        <button>Week 15</button>
+        <button>Week 16</button>
+      </div>
+      <br />
+      <div class="resource__appears">
+        <p>Resources by WEEK will appear here!</p>
+
+        <!-- We want retrieve full resource object inside a div-->
+        <div id="resource__container__week"></div>
+      </div>
+
+      <hr />
+
+      <!-- Buttons for Topic selection-->
+      <div id="select__topic" class="pick__week">
+        <a href="#screen__1"
+          ><i id="back__icon" class="fas fa-angle-left fa-2x"></i>
+        </a>
+        <h2 id="select__week">Select the Subject</h2>
+        <img id="tiny__socs" src="./images/socks.png" />
+      </div>
+      <div class="button__group">
+        <button id="CSS__button" type="button">CSS</button>
+        <button id="HTML__button" type="button">HTML</button>
+        <button id="Javascript__button" type="button">Javascript</button>
+        <button id="Mindset__button" type="button">Mindset</button>
+        <button id="Node__button" type="button">Node.js</button>
+        <button id="Testing__button" type="button">Testing</button>
+        <button id="SQL__button" type="button">SQL</button>
+        <button id="API__button" type="button">API</button>
+      </div>
+      <br />
+      <div class="resource__appears">
+        <p>Resources by TOPIC will appear here!</p>
+
+        <!-- We want retrieve full resource object inside a div-->
+        <div id="resource__container__subject"></div>
+      </div>
+
+      <hr />
+
+      <!--Section to display the course overview image-->
+      <div>
+        <div id="course__overview" class="pick__week">
+          <a href="#screen__1"
+            ><i id="back__icon" class="fas fa-angle-left fa-2x"></i>
+          </a>
+          <h2 id="select__week">Course Overview</h2>
+          <img id="tiny__socs" src="./images/socks.png" />
+        </div>
+      </div>
+      <img
+        alt="A list of of subjects covered in each week of the School of Code Bootcamp."
+        class="course__image"
+        src="./images/overview.png"
+      />
+    </div>
+
+    <!-- HTML for Screen 2 -->
+    <div class="screen" id="screen2">
+      <div>
+        <div id="course__overview" class="pick__week">
+          <i id="back__icon" class="fas fa-angle-left fa-2x"></i>
+          <h2 id="select__week">Select the Week</h2>
+          <img id="tiny__socs" src="./images/socks.png" />
+        </div>
+      </div>
+      <div class="heading heading__post">
+        <h2>Post a Resource</h2>
+      </div>
+    </div>
+    <!-- HTML for Screen 3 -->
+    <div class="screen" id="screen3">
+      <div>
+        <div id="course__overview" class="pick__week">
+          <i id="back__icon" class="fas fa-angle-left fa-2x"></i>
+          <h2 id="select__week">Select the Week</h2>
+          <img id="tiny__socs" src="../images/socks.png" />
+        </div>
+      </div>
+      <div class="heading heading__search">
+        <h2>Search for a Resource</h2>
+      </div>
+    </div>
+    <!-- HTML for Screen 4 -->
+    <div class="screen" id="screen4">
+      <div>
+        <div id="course__overview" class="pick__week">
+          <i id="back__icon" class="fas fa-angle-left fa-2x"></i>
+          <h2 id="select__week">Select the Week</h2>
+          <img id="tiny__socs" src="./images/socks.png" />
+        </div>
+      </div>
+      <div class="heading heading__delete">
+        <h2>Delete a Resource</h2>
+      </div>
+    </div>
+
+    <div id="navigation">
+      <nav>
+        <!-- Menu icons from Font Awesome -->
+        <!-- Search for icons at: https://fontawesome.com -->
+        <a
+          id="home__link"
+          href="#screen__1"
+          class="menu active"
+          onclick="showScreen1()"
+          ><i id="home__icon" class="fas fa-home fa-2x"></i><br />HOME</a
+        >
+        <a id="plus__link" class="menu" onclick="showScreen2()"
+          ><i id="plus__icon" class="fas fa-plus fa-2x"></i><br />POST</a
+        >
+        <a id="search__link" class="menu" onclick="showScreen3()"
+          ><i id="search__icon" class="fas fa-search fa-2x"></i><br />SEARCH</a
+        >
+        <a id="bin__link" class="menu" onclick="showScreen4()"
+          ><i id="bin__icon" class="fas fa-trash fa-2x"></i><br />DELETE</a
+        >
+      </nav>
+    </div>
+    <!-- Load JavaScript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
