@@ -488,7 +488,7 @@ async function getAndDisplayCSSResources() {
 
 async function retrieveCSSResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/CSS", {
+  const response = await fetch(`${baseUrl}/api/resources/CSS`, {
     headers: {
       Accept: "application/json",
     },
@@ -538,7 +538,7 @@ async function getAndDisplayHTMLResources() {
 
 async function retrieveHTMLResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/HTML", {
+  const response = await fetch(`${baseUrl}/api/resources/HTML`, {
     headers: {
       Accept: "application/json",
     },
@@ -588,8 +588,7 @@ async function getAndDisplayJavascriptResources() {
 
 async function retrieveJavascriptResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch(
-    "http://localhost:3000/api/resources/Javascript",
+  const response = await fetch(`${baseUrl}/api/resources/Javascript`,
     {
       headers: {
         Accept: "application/json",
@@ -641,7 +640,7 @@ async function getAndDisplayMindsetResources() {
 
 async function retrieveMindsetResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/Mindset", {
+  const response = await fetch(`${baseUrl}/api/resources/Mindset`, {
     headers: {
       Accept: "application/json",
     },
@@ -691,7 +690,7 @@ async function getAndDisplayNodeResources() {
 
 async function retrieveNodeResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/Node", {
+  const response = await fetch(`${baseUrl}/api/resources/Node`, {
     headers: {
       Accept: "application/json",
     },
@@ -741,7 +740,7 @@ async function getAndDisplayTestingResources() {
 
 async function retrieveTestingResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/Testing", {
+  const response = await fetch(`${baseUrl}/api/resources/Testing`, {
     headers: {
       Accept: "application/json",
     },
@@ -791,7 +790,7 @@ async function getAndDisplaySQLResources() {
 
 async function retrieveSQLResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/SQL", {
+  const response = await fetch(`${baseUrl}/api/resources/SQL`, {
     headers: {
       Accept: "application/json",
     },
@@ -841,7 +840,7 @@ async function getAndDisplayAPIResources() {
 
 async function retrieveAPIResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/API", {
+  const response = await fetch(`${baseUrl}/api/resources/API`, {
     headers: {
       Accept: "application/json",
     },
