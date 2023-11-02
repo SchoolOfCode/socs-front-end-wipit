@@ -128,7 +128,7 @@ async function getAndDisplayWeekTwoResources() {
 
 async function retrieveWeekTwoResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week2", {
+  const response = await fetch(`${baseUrl}/api/resources/week2`, {
     headers: {
       Accept: "application/json",
     },
@@ -194,7 +194,7 @@ async function getAndDisplayWeekThreeResources() {
 
 async function retrieveWeekThreeResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week3", {
+  const response = await fetch(`${baseUrl}/api/resources/week3`, {
     headers: {
       Accept: "application/json",
     },
@@ -243,7 +243,7 @@ async function getAndDisplayWeekFourResources() {
 
 async function retrieveWeekFourResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week4", {
+  const response = await fetch(`${baseUrl}/api/resources/week4`, {
     headers: {
       Accept: "application/json",
     },
@@ -292,7 +292,7 @@ async function getAndDisplayWeekFiveResources() {
 
 async function retrieveWeekFiveResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week5", {
+  const response = await fetch(`${baseUrl}/api/resources/week5`, {
     headers: {
       Accept: "application/json",
     },
@@ -341,7 +341,7 @@ async function getAndDisplayWeekSixResources() {
 
 async function retrieveWeekSixResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week6", {
+  const response = await fetch(`${baseUrl}/api/resources/week6`, {
     headers: {
       Accept: "application/json",
     },
@@ -390,7 +390,7 @@ async function getAndDisplayWeekSevenResources() {
 
 async function retrieveWeekSevenResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week7", {
+  const response = await fetch(`${baseUrl}/api/resources/week7`, {
     headers: {
       Accept: "application/json",
     },
@@ -439,7 +439,7 @@ async function getAndDisplayWeekEightResources() {
 
 async function retrieveWeekEightResources() {
   //Send GET request to the resource library API. Await the response
-  const response = await fetch("http://localhost:3000/api/resources/week8", {
+  const response = await fetch(`${baseUrl}/api/resources/week8`, {
     headers: {
       Accept: "application/json",
     },
