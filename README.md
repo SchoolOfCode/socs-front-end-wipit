@@ -13,7 +13,7 @@ A centralized app to easily sort all of the resources and make them accessible t
 ## Features
 
 - Navigate through resources sorted by week
-- Navigate through resources sorted by week
+- Navigate through resources sorted by subject
 - Check the course overview
 - Add POST, DELETE and SEARCH functionalities (Roadmap)
 - Auth for tailored experience (Roadmap)
@@ -30,9 +30,6 @@ A centralized app to easily sort all of the resources and make them accessible t
 **Testing:** Vitest, Supertest, Playwright
 
 
-## Demo
-
-[![Watch the video](https://img.youtube.com/vi/mxEHmPxkqgc/hqdefault.jpg)](https://www.youtube.com/watch?v=mxEHmPxkqgc)
 
 
 ## Authors
