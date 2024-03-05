@@ -9,6 +9,8 @@ Enters, [**SOCS**](https://socs-ui.onrender.com/).
 
 A centralized app to easily sort all of the resources and make them accessible to everyone.
 
+Front end and back end have been built in two separate repos. You can find the latter [here](https://github.com/SchoolOfCode/socs-back-end-wipit).
+
 
 ## Features
 
